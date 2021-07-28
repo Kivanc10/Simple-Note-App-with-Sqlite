@@ -14,7 +14,7 @@
 
 ## Visuals from the app
 
-|First Header                                                                              | Second Header                                                                               |
+|Visuals From                                                                              | The app                                                                              |
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 |<img src = "./attached_images/register_page.png" width="400" height = "700" align="left"/>| <img src = "./attached_images/login_page.png" width = "400" height = "700" align = "right"/>|
 |<img src = "./attached_images/inside_app_logged_in.png" width="400" height = "700" align="left"/>|<img src = "./attached_images/logout_delete_user.png" width = "400" height = "700" align = "right"/>|
