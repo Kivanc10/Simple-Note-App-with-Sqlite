@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notlarım</string>
+    <string name="enter_user_name">Kullanıcı adınızı girin</string>
+    <string name="user_name_hint">Kullanıcı Adı</string>
+    <string name="enter_gmail_text">E-mail adresinizi girin</string>
+    <string name="user_mail_hint">Mail</string>
+    <string name="enter_your_password">Şifrenizi girin</string>
+    <string name="password_hint">Şifre</string>
+    <string name="register_btn">Kayıt ol</string>
+    <string name="login_page">Giriş Ekranı</string>
+    <string name="loginBtn">Giriş</string>
+    <string name="note_hint">Notunuzu buraya girin</string>
+    <string name="deleteBtn">Notu sil</string>
+    <string name="updateBtn">Notu güncelle</string>
+    <string name="logOutIcon">Çıkış yap</string>
+    <string name="deleteIcon">Kullanıcıyı sil</string>
+    <string name="go_back_to_register">Kayıt Ekranına Dön</string>
+</resources>

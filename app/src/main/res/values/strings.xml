@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="enter_user_name">Enter your user name</string>
+    <string name="user_name_hint">Username</string>
+    <string name="enter_gmail_text">Enter your mail address</string>
+    <string name="user_mail_hint">Mail</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="password_hint">Password</string>
+    <string name="register_btn">Register</string>
+    <string name="login_page">Login Page</string>
+    <string name="loginBtn">Login</string>
+    <string name="note_hint">Enter your note here</string>
+    <string name="deleteBtn">Delete Note</string>
+    <string name="updateBtn">Update Note</string>
+    <string name="logOutIcon">Logout</string>
+    <string name="deleteIcon">Delete User</string>
+    <string name="go_back_to_register">Back to Register Page</string>
+</resources>

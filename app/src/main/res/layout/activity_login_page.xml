@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/takenText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.TextView"
+        app:layout_constraintStart_toStartOf="@+id/loginUserName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_user_name"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginUserName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takenText"
+        android:hint="@string/user_name_hint"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginUserNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textEnterPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginUserName"
+        android:text="@string/enter_your_password"
+        style="@style/Widget.TextView"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnterPassword"
+        android:hint="@string/password_hint"
+        android:id="@+id/loginUserPassword">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginUserPasswordEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="navigateToInside"
+        android:text="@string/loginBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginUserPassword" />
+
+    <Button
+        android:id="@+id/goBackToRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back_to_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButtonId"
+        android:layout_marginTop="20dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

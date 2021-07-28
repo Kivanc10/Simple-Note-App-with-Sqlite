@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/enterUserNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_user_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="20dp"
+        style="@style/Widget.TextView"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/enterUserEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enterUserNameText"
+        android:hint="@string/user_name_hint"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getUserNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/enterYourMailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_gmail_text"
+        style="@style/Widget.TextView"
+        app:layout_constraintTop_toBottomOf="@+id/enterUserEditText"
+        android:paddingTop="20dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/enterUserMailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourMailText"
+        android:hint="@string/user_mail_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getMailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/enterYourPasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.TextView"
+        android:paddingTop="20dp"
+        android:text="@string/enter_your_password"
+        app:layout_constraintTop_toBottomOf="@+id/enterUserMailEditText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/enterUserPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourPasswordText"
+        android:hint="@string/password_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getUserPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="sendMessage"
+        android:text="@string/register_btn"
+        app:layout_constraintTop_toBottomOf="@+id/enterUserPasswordEditText"
+        tools:layout_editor_absoluteX="15dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
